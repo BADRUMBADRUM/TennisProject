@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body
+    {
+        background-image: url("Pictures/TennisCourt.jfif");
+        background-size: 100%;
+    }
+</style>
+<head>
+    <title>BokaBana</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h1 size="+4">BOKA BANA</h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" onclick="window.location.href = 'banor.html'">BANOR</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" onclick="window.location.href = 'omkladningsrum.html'">OMKLÄDNINGSRUM</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" onclick="window.location.href = 'bastu.html'">BASTU</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" onclick="window.location.href = 'index1.html'">HEM</button>
+<form>
+    <center>
+    <div class="boking">
+        <label for="fname">Förnamn:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Efternamn:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="bokningstid">Boka tid:</label><br>
+        <input type="datetime-local" id="bokningstid" name="bokningstid"><br>
+            
+        <label>Hur många timmar vill du spela?</label><br>
+        <input type="radio" id="1timmar" name="timmar" value="1IMMAR">
+        <label for="1timmar">1 Timmar</label><br>
+        <input type="radio" id="2timmar" name="timmar" value="2IMMAR">
+        <label for="2timmar">2 Timmar</label><br>
+        <input type="radio" id="3timmar" name="timmar" value="3IMMAR">
+        <label for="3timmar">3 Timmar</label>
+    </div>  
+    </center>    
+</form>
+</body>
+</head>
+</html>
