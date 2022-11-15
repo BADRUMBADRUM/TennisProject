@@ -1,9 +1,3 @@
-.WebContainer
-{
-    width: 100%;
-    min-width: 1000px;
-    height: auto;
-}
 table
 {
     font-size: large;
@@ -20,11 +14,7 @@ th
     width: 50px;
     height: 50px;
 }
-th:hover
-{
-    background-color:#6BD66B;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+th:hover{background-color:#6BD66B; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
 .boking
 {
     margin-top: 50px;
@@ -50,32 +40,20 @@ p, th
     padding-top: 50px;
     padding-right: 50px;
 }
-a
-{
-    color: #6BD66B;
-    opacity: 0.7;
-}
-a:hover
-{
-    color: #F0C648;
-    text-decoration: solid;
-    opacity: 1;
-}
-a:active
-{
-    color: #6BD66B;
-}
+a{color: #6BD66B; opacity: 0.7;}
+a:hover{color: #F0C648; text-decoration: solid; opacity: 1;}
+a:active{color: #6BD66B;}
 h1
 {
     border: 3px solid;
     border-radius: 12px;
-    background-color:  #6bd66b5e;
+    background-color: #6bd66b5e;
     padding-top: 5px;
     padding-left:50px;
     font-size: 3em;
     color: black;
 }
-button
+.index1Buttons
 {
     color:black;
     background-color:#6bd66b5e;
@@ -84,15 +62,44 @@ button
     width: 300px;
     height: 70px;
     font: 20px Arial, sans-serif;
+    margin-top: 10px; margin-left: 20px;
 }
-p,button
+p,.index1Buttons{padding-top: 20px; padding-right: 200px;}
+.index1Buttons:hover{background-color: #6BD66B; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+body.home{background-image: url("Pictures/TennisBackground.jpg"); background-size: 100%;}
+body.bastu{background-image: url("Pictures/BastuBackgrund.jpg"); background-size: 100%;}
+body.banor{background-image: url("Pictures/TennisCourt.jfif"); background-size: 100%;}
+body.omkladningsrum{background-image: url("Pictures/Omkladningsrum.jpg"); background-size: 100%;}
+@media screen and (max-width: 1100px) 
 {
-    padding-top: 20px;
-    padding-right: 200px;
+    .index1Buttons 
+    {
+      width: 200px; height: 50px;
+    }
 }
-button:hover
+@media screen and (max-width: 750px)
+{   
+    body
+    {
+        background-image: none;
+    }
+    .index1Buttons
+    {
+        margin-top: 20px; margin-left:0px;
+    }   
+    .boking
+    {
+        width: 350px; height: 400px;
+    } 
+    h1
+    {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 500px)
 {
-    background-color: #6BD66B;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    
+    .index1Buttons
+    {
+        width: 400px; height: 70px;
+    }
 }
