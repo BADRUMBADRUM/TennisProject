@@ -5,6 +5,9 @@ table
     background-color: transparent;
     margin-left: auto;
     margin-right: auto;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
 }
 th
 {
@@ -14,6 +17,7 @@ th
     width: 50px;
     height: 50px;
 }
+p, th{padding-top: 50px; padding-right: 50px;}
 th:hover{background-color:#6BD66B; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
 .boking
 {
@@ -34,11 +38,6 @@ input
 label   
 {
     font: 25px Arial, sans-serif;
-}
-p, th
-{
-    padding-top: 50px;
-    padding-right: 50px;
 }
 a{color: #6BD66B; opacity: 0.7;}
 a:hover{color: #F0C648; text-decoration: solid; opacity: 1;}
@@ -66,10 +65,10 @@ h1
 }
 p,.index1Buttons{padding-top: 20px; padding-right: 200px;}
 .index1Buttons:hover{background-color: #6BD66B; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
-body.home{background-image: url("Pictures/TennisBackground.jpg"); background-size: 100%;}
-body.bastu{background-image: url("Pictures/BastuBackgrund.jpg"); background-size: 100%;}
-body.banor{background-image: url("Pictures/TennisCourt.jfif"); background-size: 100%;}
-body.omkladningsrum{background-image: url("Pictures/Omkladningsrum.jpg"); background-size: 100%;}
+body.home{background-image: url("Pictures/TennisBackground.jpg"); background-size: cover;}
+body.bastu{background-image: url("Pictures/BastuBackgrund.jpg"); background-size: cover;}
+body.banor{background-image: url("Pictures/TennisCourt.png"); background-size: cover;}
+body.omkladningsrum{background-image: url("Pictures/Omkladningsrum.jpg"); background-size: cover;}
 @media screen and (max-width: 1100px) 
 {
     .index1Buttons 
@@ -79,9 +78,19 @@ body.omkladningsrum{background-image: url("Pictures/Omkladningsrum.jpg"); backgr
 }
 @media screen and (max-width: 750px)
 {   
-    body
+    table
     {
-        background-image: none;
+        margin-top: 0px;
+    }
+    th
+    {
+        font-size: 10px;
+        width: 40px; height: 40px;
+    }
+    p, th
+    {
+        padding-right: 0px;
+        padding-top: 0px;
     }
     .index1Buttons
     {
@@ -90,10 +99,15 @@ body.omkladningsrum{background-image: url("Pictures/Omkladningsrum.jpg"); backgr
     .boking
     {
         width: 350px; height: 400px;
+        margin-top: 30px;
     } 
     h1
     {
         font-size: 2em;
+    }
+    body.home
+    {
+        background-size:auto;
     }
 }
 @media screen and (max-width: 500px)
