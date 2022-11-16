@@ -5,10 +5,12 @@
     <link rel="stylesheet" href="style.css">
 <body class="omkladningsrum">
     <h1 size="+4">BOKA OMKLÄDNINGSRUM</h1>
+        <!--Knappar för att nå de olika sidorna på tennis hemsidan-->
         <button class="index1Buttons" type="button" onclick="window.location.href = 'banor.html'">BANOR</button>
         <button class="index1Buttons" type="button" onclick="window.location.href = 'omkladningsrum.html'">OMKLÄDNINGSRUM</button>
         <button class="index1Buttons" type="button" onclick="window.location.href = 'bastu.html'">BASTU</button>
         <button class="index1Buttons" type="button" onclick="window.location.href = 'index1.html'">HEM</button>
+<!--Formulär för att Spara ner värden användaren skriver in-->
 <form>
     <center>
     <div class="boking">
@@ -18,7 +20,7 @@
         <input type="text" id="lname" name="lname"><br>
         <label for="bokningstid">Boka tid:</label><br>
         <input type="datetime-local" id="bokningstid" name="bokningstid"><br>
-            
+
         <label>Hur många timmar vill du spela?</label><br>
         <input type="radio" id="1timmar" name="timmar" value="1IMMAR">
         <label for="1timmar">1 Timmar</label><br>
@@ -30,6 +32,7 @@
     <button class="index1Buttons" type="button">Submit</button>
     </center>    
 </form>
+<!--Kalender för dagarna i en tabell-->
 <table class="center">
     <br>
     <br>
