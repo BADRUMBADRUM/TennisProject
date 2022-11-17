@@ -1,58 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script>
-    function CheckInput()
-    {
-        var FNameValue = document.getElementById('fname').value;
-        var LNameValue = document.getElementById('lname').value;
-        var BokningsTid = document.getElementById('bokningstid').value;     
-        var HoursToBook;
-        var KonForBastu;
-        if(FNameValue == "")
-        {
-            alert('Skriv in ditt förnamn');
-        }
-        if(LNameValue == "")
-        {
-            alert('Skriv in ditt efternamn');
-        }
-        if(BokningsTid == "")
-        {
-            alert("Välj tid att basta");
-        }
-
-        if(document.getElementById('1timmar').checked == true)
-        {
-            HoursToBook = document.getElementById('1timmar').value;
-        }
-        else if(document.getElementById('2timmar').checked == true)
-        {
-            HoursToBook = document.getElementById('2timmar').value;
-        }
-        else if(document.getElementById('3timmar').checked == true)
-        {
-            HoursToBook = document.getElementById('3timmar').value;
-        }
-        else
-        {
-            alert('Välj timmar att basta')
-        }
-
-        if(document.getElementById('man').checked == true)
-        {
-            KonForBastu = document.getElementById('man').value;
-        }
-        else if(document.getElementById('kvinna').checked == true)
-        {
-            KonForBastu = document.getElementById('kvinna').value;
-        }
-        else
-        {
-            alert('välj kön');
-        }
-
-    }
-</script>
+<script src="javascrpt.js"></script>
 <head>
     <title>BokaBana</title>
     <link rel="stylesheet" href="style.css">
@@ -64,7 +12,7 @@
         <button class="index1Buttons" type="button" onclick="window.location.href = 'bastu.html'">BASTU</button>
         <button class="index1Buttons" type="button" onclick="window.location.href = 'index1.html'">HEM</button>
 <!--Formulär för att Spara ner värden användaren skriver in-->
-<form>
+<form id="MyForm">
     <center>
     <div class="boking">
         <label for="fname">Förnamn:</label><br>
@@ -75,11 +23,11 @@
         <input type="datetime-local" id="bokningstid" name="bokningstid"><br>
             
         <label>Hur många timmar vill du basta?</label><br>
-        <input type="radio" id="1timmar" name="timmar" value="1IMMAR">
+        <input type="radio" id="1timmar" name="timmar" value="1TIMMAR">
         <label for="1timmar">1 Timmar</label><br>
-        <input type="radio" id="2timmar" name="timmar" value="2IMMAR">
+        <input type="radio" id="2timmar" name="timmar" value="2TIMMAR">
         <label for="2timmar">2 Timmar</label><br>
-        <input type="radio" id="3timmar" name="timmar" value="3IMMAR">
+        <input type="radio" id="3timmar" name="timmar" value="3TIMMAR">
         <label for="3timmar">3 Timmar</label><br>
 
         <label>Vilket kön?</label><br>
@@ -89,7 +37,7 @@
         <label for="kvinna">Kvinna</label><br>
         <br>
     </div>  
-    <button class="index1Buttons" type="button" onclick="CheckInput()">Submit</button>
+    <button class="index1Buttons" type="button" onclick="CheckBastuInput()">Submit</button>
     </center>    
 </form>
 <!--Kalender för dagarna i en tabell-->
