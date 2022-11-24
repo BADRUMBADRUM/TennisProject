@@ -1,45 +1,13 @@
 <!DOCTYPE html>
 <html>
-<script src="javascrpt.js"></script>
 <head>
-    <title>BokaBana</title>
+    <title>BokaBastu</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 <body class="bastu">
-    <h1 size="+4">BOKA BASTU</h1>
-        <!--Knappar för att nå de olika sidorna på tennis hemsidan-->
-        <button class="index1Buttons" type="button" onclick="window.location.href = 'banor.html'">BANOR</button>
-        <button class="index1Buttons" type="button" onclick="window.location.href = 'omkladningsrum.html'">OMKLÄDNINGSRUM</button>
-        <button class="index1Buttons" type="button" onclick="window.location.href = 'bastu.html'">BASTU</button>
-        <button class="index1Buttons" type="button" onclick="window.location.href = 'index1.html'">HEM</button>
-<!--Formulär för att Spara ner värden användaren skriver in-->
-<form id="MyForm">
-    <center>
-    <div class="boking">
-        <label for="fname">Förnamn:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Efternamn:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="bokningstid">Boka tid:</label><br>
-        <input type="datetime-local" id="bokningstid" name="bokningstid"><br>
-            
-        <label>Hur många timmar vill du basta?</label><br>
-        <input type="radio" id="1timmar" name="timmar" value="1TIMMAR">
-        <label for="1timmar">1 Timmar</label><br>
-        <input type="radio" id="2timmar" name="timmar" value="2TIMMAR">
-        <label for="2timmar">2 Timmar</label><br>
-        <input type="radio" id="3timmar" name="timmar" value="3TIMMAR">
-        <label for="3timmar">3 Timmar</label><br>
-
-        <label>Vilket kön?</label><br>
-        <input type="radio" id="man" name="kön" value="MAN">
-        <label for="man">Man</label>
-        <input type="radio" id="kvinna" name="kön" value="KVINNA">
-        <label for="kvinna">Kvinna</label><br>
-        <br>
-    </div>  
-    <button class="index1Buttons" type="button" onclick="CheckBastuInput()">Submit</button>
-    </center>    
-</form>
+    <div id="root"></div>
 <!--Kalender för dagarna i en tabell-->
 <table class="center">
     <br>
@@ -60,6 +28,7 @@
         <th>29</th><th>30</th>
     </tr>
 </table>
+<script type="text/babel" src="Bastujs.js"></script>
 </body>
 </head>
 </html>
