@@ -81,6 +81,11 @@ function validateForm()
         alert("ogiltigt efternamn");
     }
 
+    if(document.getElementById("mdate").value == "")
+    {
+        alert("välj ett datum");
+    }
+    alert(document.getElementById("fname").value + " " + document.getElementById("lname").value + " " + document.getElementById("mdate").value + " " + document.getElementById("time").value);
 }
 
 let dateSelected = document.getElementById("mdate");
