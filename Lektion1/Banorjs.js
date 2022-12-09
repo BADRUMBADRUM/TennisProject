@@ -45,6 +45,7 @@ const MyJSXElement = () => {
 }; 
 ReactDOM.render(<MyJSXElement />, banorRoot);
 
+//funktion för att se om en knapp länkad till en annan sida blivit tryckt
 const ClickMenu = (context) =>
 {
     if(context === "banor")
@@ -66,6 +67,7 @@ const ClickMenu = (context) =>
        
 }
 
+//funktion för att validera forum
 function validateForm()
 {
     let regularName = /^[a-öA-Ö]+$/;
@@ -93,8 +95,8 @@ let dateSelected = document.getElementById("mdate");
 let dateVariable = new Date();
 const dateAsString = dateVariable.getFullYear() + "-" + (dateVariable.getMonth() + 1) + "-" + dateVariable.getDate();
 dateSelected.min = dateAsString;
-console.log(dateSelected);
 
+//Funktion tillämpad för att hamburgermeny
 function DisplayOptions()
 {
     const reactBanorVariable = document.getElementById("banor");
